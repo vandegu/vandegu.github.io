@@ -1,0 +1,13 @@
+/* Remove bullets, margins, and padding from the nav section */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove underline from the links in the nav section */
+nav a {
+  text-decoration: none;
+  font-family: "OCR A Std";
+  color: #00a0c6;
+}
