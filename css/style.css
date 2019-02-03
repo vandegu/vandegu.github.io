@@ -11,3 +11,8 @@ nav a {
   font-family: "OCR A Std";
   color: #00a0c6;
 }
+
+a.current {
+  text-decoration: underline;
+  font-weight: bold;
+}
