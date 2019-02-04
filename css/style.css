@@ -12,6 +12,7 @@ nav a {
   color: #00a0c6;
 }
 
+/* Highlight the current location for the nav and other links */
 a.current {
   text-decoration: underline;
   text-decoration-color: #000000;
