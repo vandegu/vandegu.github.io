@@ -6,6 +6,8 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Padauk" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-icon-72x72.png">
@@ -30,37 +32,50 @@
 
 
 
-    <header>
+    <header id="about-header">
 
-      <a href="#content">Skip to content.</a>
+      <a href="#content" class='skip'>Skip to content.</a>
+      <div class="logo-nav">
 
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html" class="current">About Me</a></li>
-          <li><a href="experience.html">My Experience</a></li>
-          <li><a href="projects.html">My Projects</a></li>
-          <li><a href="creative.html">Creative Pursuits</a></li>
-        </ul>
-      </nav>
+        <img src="./images/AVG_logo.png" alt="Andrew's logo; a 6-sided die shape with A on one side, V on another (these are his initials)">
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="current">About Me</a></li>
+            <li><a href="experience.html">My Experience</a></li>
+            <li><a href="projects.html">My Projects</a></li>
+            <li><a href="creative.html">Creative Pursuits</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main id="content">
 
       <!--wedding.jpg, centered-->
-      <figure>
+      <div id="fixed-content">
         <img src="images/me/wedding.jpg" alt="A picture of Andrew sitting in a chair before his wedding, smiling.">
-      </figure>
+      </div>
 
+      <div id="empty-space"></div>
+
+      <div id="scrolling-content" class="background-info">
         <h1>About Me</h1>
+
+        <div class="white-space"></div>
 
         <h2>Who Am I?</h2>
             <p>I'm a data scientist, stats geek, analyst, husband, and lifelong gamer.</p>
+
+        <div class="white-space"></div>
 
         <section>
             <h2>Where Am I?</h2>
                 <p>A native of the Midwest, I have lived all over but currently reside in Ann Arbor, Michigan.</p>
         </section>
+
+        <div class="white-space"></div>
 
         <section>
             <h2>What Do I Do?</h2>
@@ -70,6 +85,8 @@
                 that people can use to wrest the meaning from complex data.</p>
                 <p>If you have a data that needs curious, creative, curated handling, look no further.</p>
         </section>
+
+        <div class="white-space"></div>
 
         <section>
             <h2>A little more about me...</h2>
@@ -81,9 +98,15 @@
                 family, reading, or enjoying a board/video game with friends.</p>
         </section>
 
+        <div class="white-space"></div>
+      </div>
+
     </main>
 
-    <footer></footer>
+    <footer id="about-footer">
+        <i class="fa fa-linkedin-square" aria-label="LinkedIn Logo"></i>
+        <i class="fa fa-github-square" aria-label="Github Logo"></i>
+    </footer>
 
   </body>
 </html>

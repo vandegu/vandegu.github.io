@@ -8,13 +8,308 @@ nav ul {
 /* Remove underline from the links in the nav section */
 nav a {
   text-decoration: none;
-  font-family: "OCR A Std";
-  color: #00a0c6;
+  font-family: "OCR A Std", monospace;
+  color: #00aef0;
 }
 
 /* Highlight the current location for the nav and other links */
 a.current {
   text-decoration: underline;
-  text-decoration-color: #000000;
+  text-decoration-color: #ffffff;
   font-weight: bold;
+}
+
+h1 {
+  font-family: 'OCR A Std', monospace;
+  color: #00aef0;
+  text-align: center;
+  background: #ffffff;
+  padding: 50px;
+  font-size: 100px;
+}
+
+h2 {
+  font-family: 'Padauk', sans-serif;
+  /* font-family: 'VT323', monospace; */
+  font-size: 110px;
+  color: #00aef0;
+}
+
+h3 {
+  font-size: 65px;
+  color: #00aef0;
+  font-family: 'Padauk', sans-serif;
+}
+
+p {
+  font-size: 24px;
+  color: #ffffff;
+  font-family: 'Padauk', sans-serif;
+}
+
+main {
+  background-color: #333333;
+}
+
+.white-space {
+  height: 90px;
+}
+
+a.skip{
+	padding:10px;
+	text-decoration: none;
+	position: relative;
+    top: -80px;
+    transition: top ease-in 2s;
+}
+
+a.skip:focus{
+	background: white;
+	top: 0px;
+	border: 1px solid black;
+}
+
+/* Header stuff */
+/* Q. How do I make the nav bar not irritably unresponsive? */
+
+header {
+  min-height: 20vh;
+  background-color: #000000;
+}
+
+header div.logo-nav {
+  display: grid;
+  grid-template-columns: auto 45% 45% auto
+}
+
+header img {
+  width: 60%;
+  padding: 0% 10% 5% 10%;
+  grid-column-start: 2;
+}
+
+header nav {
+  text-align: right;
+  grid-column-start: 3;
+  font-size: 2vw;
+}
+
+/* Footer stuff */
+
+footer {
+  min-height: 20vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #000000;
+}
+
+i.fa {
+    font-size: 17vw;
+    color: #00aef0;
+  }
+
+
+/* PROJECTS.HTML SPECIFIC */
+
+/* Set up the main column (doesn't do anything with just one column,
+however for completeness' sake I will leave it in so that when the
+media query comes in later it will be clear what the difference is.) */
+div#project-views {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+/* Set the h2 titles for each project to be centered */
+div#project-views h2 {
+  text-align: center;
+  padding-top: 30px;
+}
+
+/* Internal flexboxes for the figures and text. */
+/* Q. How to make this vertical space-around responsive and nice to different
+sized screens?  */
+div.project-images {
+  min-height: 1900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Image sizes */
+.project-images img {
+  width: 80%;
+}
+
+/* Set h3 headers to have spacing */
+.project-view h3 {
+  text-align: center;
+  padding: 30px;
+}
+
+/* Set p to be nicely formatted with edge spacing */
+.project-view p {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+/* EXPERIENCE.HTML SPECIFIC */
+
+div#me {
+  display: grid;
+  grid-template-columns: auto 70vw auto
+}
+
+div#me img {
+  grid-column-start: 2;
+  width: 70vw;
+}
+
+.background-info h2 {
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+}
+
+.background-info h3 {
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+}
+
+.background-info p {
+  margin: 80px;
+}
+
+p#bi-p {
+  text-align: center;
+  margin: 10px 80px 10px 80px;
+}
+
+/* Other way (besides grid) to center an img...make it block! */
+img.skill-icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15vw;
+}
+
+/* ABOUT.HTML SPECIFIC */
+
+/* Fixed, underneath */
+div#fixed-content img {
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+  height: 100vh;
+  margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+  left: 0;
+  right: 0;
+}
+
+div#empty-space {
+  height: 60vh;
+}
+
+div#scrolling-content {
+  position: relative;
+  top: 0vh;
+  z-index: 2;
+  background-color: #333333;
+}
+
+header#about-header {
+  position: relative;
+  top: 0px;
+  z-index: 2
+}
+
+/* Q. How to get the footer to show at the bottom? */
+footer#about-footer {
+  position: relative;
+  top: 0px;
+  z-index: 2
+}
+
+/* CREATIVE.HTML SPECIFIC */
+
+.creative h2 {
+  text-align: center;
+  padding-left: auto;
+  padding-right: auto;
+}
+
+.creative img {
+  display: block;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.creative p {
+  margin: 80px;
+}
+
+/* INDEX.HTML SPECIFIC */
+
+div.index-header {
+  display: grid;
+  grid-template-columns: 30vw auto;
+}
+
+.index-header img {
+  grid-column-start: 1;
+  width: 25vw;
+  margin: auto;
+}
+
+.index-header.title {
+  grid-column-start: 2;
+  padding: auto 0px auto 0px;
+}
+
+.index-header h1 {
+  text-align: left;
+  font-size: 5vw;
+  background-color: inherit;
+  padding: 0px;
+}
+
+.index-header h2 {
+  text-align: left;
+  font-size: 6vw;
+}
+
+main.index-main {
+  background-color: #333333;
+  background-image: url("../images/data_bg.jpg");
+  background-position: center;
+  display: grid;
+  grid-template-rows: 40vh 5vh 10vh;
+  grid-template-columns: auto auto;
+}
+
+.index-main h3 {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  justify-self: end;
+  text-align: center;
+  background-color: rgba(0,0,0,0.8);
+  margin: auto;
+  padding: 20px 50px;
+}
+
+footer#index-footer {
+  background: #000000;
+  min-height: 30vh;
+}
+
+footer#index-footer nav{
+  background: #000000;
+  font-size: 3vh;
+  text-align: center;
+  margin: auto;
 }
