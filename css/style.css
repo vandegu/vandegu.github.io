@@ -5,6 +5,11 @@ nav ul {
   padding: 0;
 }
 
+/* For the links to the resume and soundcloud */
+a {
+  color: #00aef0;
+}
+
 /* Remove underline from the links in the nav section */
 nav a {
   text-decoration: none;
