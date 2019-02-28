@@ -78,25 +78,36 @@ a.skip:focus{
 /* Q. How do I make the nav bar not irritably unresponsive? */
 
 header {
-  min-height: 20vh;
+  height: 200px;
   background-color: #000000;
 }
 
-header div.logo-nav {
-  display: grid;
-  grid-template-columns: auto 45% 45% auto
-}
+/* header div.logo-nav {
+  display: flex;
+} */
 
 header img {
-  width: 60%;
-  padding: 0% 10% 5% 10%;
-  grid-column-start: 2;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  max-width:230px;
+  max-height:180px;
+  width: auto;
+  height: auto;
 }
 
 header nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
   text-align: right;
-  grid-column-start: 3;
-  font-size: 2vw;
+  font-size: 1.8rem;
+}
+
+header nav ul {
+  justify-content: flex-end;
 }
 
 /* Footer stuff */
@@ -208,7 +219,6 @@ div#fixed-content img {
   top: 0px;
   z-index: 1;
   height: 100vh;
-  margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
   left: 0;
   right: 0;
 }
@@ -261,19 +271,19 @@ footer#about-footer {
 /* INDEX.HTML SPECIFIC */
 
 div.index-header {
-  display: grid;
-  grid-template-columns: 30vw auto;
+  display: flex;
+  align-items: center;
+  height: 200px;
 }
 
-.index-header img {
-  grid-column-start: 1;
-  width: 25vw;
-  margin: auto;
+header .index-header .logo-index img {
+  padding: 0px 25px 0px 25px;
+  border-right: 3px solid white;
+  position: static;
 }
 
-.index-header.title {
-  grid-column-start: 2;
-  padding: auto 0px auto 0px;
+.index-header .title {
+  margin: 0 0 0 25px;
 }
 
 .index-header h1 {
@@ -309,7 +319,7 @@ main.index-main {
 
 footer#index-footer {
   background: #000000;
-  min-height: 30vh;
+  min-height: 40vh;
 }
 
 footer#index-footer nav{
