@@ -75,7 +75,7 @@ a.skip:focus{
 	border: 1px solid black;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   h1 {
     font-size: 60px;
   }
@@ -150,7 +150,7 @@ i.fa {
     color: #00aef0;
   }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   footer .footer-icons p {
     display: inline;
   }
@@ -204,7 +204,7 @@ div.project-images {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   section.project-view {
     display: flex;
     flex-direction: row;
@@ -266,7 +266,7 @@ img.skill-icon {
   width: 10vw;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   section.background-info#top {
     display: flex;
     align-items: center;
@@ -350,7 +350,7 @@ footer#about-footer {
   z-index: 2
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   div#fixed-content img {
     position: fixed;
     top: -130px;
@@ -394,7 +394,7 @@ footer#about-footer {
   margin: 80px;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   div.creative-images {
     display: flex;
     width: 60%;
@@ -474,7 +474,7 @@ footer#index-footer nav{
   margin: auto;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   footer#index-footer nav ul {
     padding: 100px 0px;
     display: flex;
