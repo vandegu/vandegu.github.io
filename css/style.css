@@ -52,6 +52,7 @@ p {
   font-family: 'Padauk', sans-serif;
 }
 
+
 main {
   background-color: #333333;
 }
@@ -74,11 +75,29 @@ a.skip:focus{
 	border: 1px solid black;
 }
 
+@media screen and (min-width: 700px) {
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 45px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .white-space {
+    height: 45px;
+  }
+}
+
 /* Header stuff */
 /* Q. How do I make the nav bar not irritably unresponsive? */
 
 header {
-  height: 200px;
+  height: 130px;
   background-color: #000000;
 }
 
@@ -92,28 +111,28 @@ header img {
   top: 10px;
   left: 10px;
   max-width:230px;
-  max-height:180px;
+  max-height:110px;
   width: auto;
   height: auto;
+  padding: 0 25px 0 0;
+  border-right: 3px solid white;
 }
 
 header nav {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 20px;
+  right: 10px;
   height: 100%;
   text-align: right;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
 }
 
-header nav ul {
-  justify-content: flex-end;
-}
+
 
 /* Footer stuff */
 
-footer {
-  min-height: 20vh;
+footer .footer-icons {
+  min-height: 200px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -122,21 +141,34 @@ footer {
   background-color: #000000;
 }
 
+footer .footer-icons p {
+  display: none;
+}
+
 i.fa {
-    font-size: 17vw;
+    font-size: 150px;
     color: #00aef0;
   }
 
+@media screen and (min-width: 700px) {
+  footer .footer-icons p {
+    display: inline;
+  }
+  i.fa {
+      font-size: 150px;
+      color: #00aef0;
+    }
+}
 
 /* PROJECTS.HTML SPECIFIC */
 
 /* Set up the main column (doesn't do anything with just one column,
 however for completeness' sake I will leave it in so that when the
 media query comes in later it will be clear what the difference is.) */
-div#project-views {
+/* div#project-views {
   display: grid;
   grid-template-columns: 100%;
-}
+} */
 
 /* Set the h2 titles for each project to be centered */
 div#project-views h2 {
@@ -170,6 +202,29 @@ div.project-images {
 .project-view p {
   width: 80vw;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 700px) {
+  section.project-view {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+  }
+  div.project-images {
+    min-height:600px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  div.project-description {
+    width: 500px;
+  }
+  div.project-description p {
+    width: 500px;
+  }
 }
 
 /* EXPERIENCE.HTML SPECIFIC */
@@ -208,7 +263,55 @@ img.skill-icon {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 15vw;
+  width: 10vw;
+}
+
+@media screen and (min-width: 700px) {
+  section.background-info#top {
+    display: flex;
+    align-items: center;
+  }
+
+  div#me {
+    display: block;
+    min-width: 50vw;
+  }
+
+  div#me img#my-face {
+    width: 300px;
+    padding: 0 100px;
+  }
+
+  #skill-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .skill-list-item {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  div#me img#my-face {
+    width: 300px;
+    padding: 0 200px;
+  }
+
+  #skill-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .skill-list-item {
+    width: 25%;
+  }
+
+  .skill-list-item p {
+    margin: 0 20px;
+    font-size: 16px;
+  }
 }
 
 /* ABOUT.HTML SPECIFIC */
@@ -247,6 +350,29 @@ footer#about-footer {
   z-index: 2
 }
 
+@media screen and (min-width: 700px) {
+  div#fixed-content img {
+    position: fixed;
+    top: -130px;
+    z-index: 1;
+    height: 100vw;
+    margin: 0 auto;
+  }
+  div#scrolling-content p {
+    margin: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  div#fixed-content img {
+    position: fixed;
+    top: -300px;
+    z-index: 1;
+    height: 100vw;
+    margin: 0 auto;
+  }
+}
+
 /* CREATIVE.HTML SPECIFIC */
 
 .creative h2 {
@@ -268,12 +394,31 @@ footer#about-footer {
   margin: 80px;
 }
 
+@media screen and (min-width: 700px) {
+  div.creative-images {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+  }
+  div.creative-images img {
+    width: 250px;
+    margin: 0 auto;
+  }
+  .creative p {
+    margin: 30px;
+  }
+}
+
 /* INDEX.HTML SPECIFIC */
 
 div.index-header {
+  position: absolute;
+  top: 15px;
   display: flex;
   align-items: center;
-  height: 200px;
+  height: 100px;
 }
 
 header .index-header .logo-index img {
@@ -288,14 +433,14 @@ header .index-header .logo-index img {
 
 .index-header h1 {
   text-align: left;
-  font-size: 5vw;
+  font-size: 30px;
   background-color: inherit;
   padding: 0px;
 }
 
 .index-header h2 {
   text-align: left;
-  font-size: 6vw;
+  font-size: 30px;
 }
 
 main.index-main {
@@ -319,7 +464,7 @@ main.index-main {
 
 footer#index-footer {
   background: #000000;
-  min-height: 40vh;
+  min-height: 100px;
 }
 
 footer#index-footer nav{
@@ -327,4 +472,19 @@ footer#index-footer nav{
   font-size: 3vh;
   text-align: center;
   margin: auto;
+}
+
+@media screen and (min-width: 700px) {
+  footer#index-footer nav ul {
+    padding: 100px 0px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main.index-main {
+    grid-template-rows: 60vh 5vh 10vh;
+    grid-template-columns: auto auto;
+  }
 }

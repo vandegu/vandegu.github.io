@@ -5,6 +5,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name= ‘viewport’ content=’width=device-width, initial-scale=1’>
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Padauk" rel="stylesheet">
@@ -49,25 +50,27 @@
       </div>
     </header>
 
-    <main id="content">
+    <main id="content" class="exp">
 
       <h1>My Experience</h1>
 
       <div class="white-space"></div>
 
     <!-- headshot.jpg; centered -->
-      <section class="background-info">
+      <section class="background-info" id="top">
         <div id="me">
-          <img src="./images/me/headshot.jpg" alt="A picture of Andrew looking forward, professional, and confident.">
+          <img id="my-face" src="./images/me/headshot.jpg" alt="A picture of Andrew looking forward, professional, and confident.">
         </div>
-        <h2>Background info:</h2>
-            <p id="bi-p">I am a data scientist/analyst with experience in scientific programming, data visualization, and
-            reporting. My goal is to work with data in an environment where the insights from my work
-            directly impact the decisions being made with regard to business direction, product design, and
-            content development.</p>
+        <div>
+          <h2>Background info:</h2>
+              <p id="bi-p">I am a data scientist/analyst with experience in scientific programming, data visualization, and
+              reporting. My goal is to work with data in an environment where the insights from my work
+              directly impact the decisions being made with regard to business direction, product design, and
+              content development.</p>
+        </div>
       </section>
 
-      <section class="background-info">
+      <section class="background-info" id="bot">
 
         <div class="white-space"></div>
 
@@ -78,6 +81,8 @@
 
             <div class="white-space"></div>
 
+            <div id="skill-list">
+            <div class="skill-list-item">
             <img src="./images/icons/baseline-code-24px.svg" class="skill-icon" alt="Icon for python development.">
             <h3>Python development</h3>
                 <p>I have worked with Python since 2014, have taught graduate-level classes on Python,
@@ -85,7 +90,9 @@
                 and scientific research.</p>
 
             <div class="white-space"></div>
+            </div>
 
+            <div class="skill-list-item">
             <img src="./images/icons/baseline-trending_up-24px.svg" class="skill-icon" alt="Icon for statistical inference.">
             <h3>Statistical inference</h3>
                 <p>I have used bayesian techniques and machine learning to make inferences and extract patterns
@@ -93,21 +100,27 @@
                 develpment company.</p>
 
             <div class="white-space"></div>
+            </div>
 
+            <div class="skill-list-item">
             <img src="./images/icons/baseline-picture_in_picture_alt-24px.svg" class="skill-icon" alt="Icon for app development.">
             <h3>App development</h3>
                 <p>I have developed web applications to manage databases, and display the data meaningfully and
                 aesthetically.</p>
 
             <div class="white-space"></div>
+            </div>
 
+            <div class="skill-list-item">
             <img src="./images/icons/db.svg" class="skill-icon" alt="Icon for database management.">
             <h3>Database management</h3>
                 <p>I am comfortable with SQL and its various flavors. I am experienced in building database systems
                 from provided data, data scraped from the web, and more.</p>
 
             <div class="white-space"></div>
+            </div>
 
+            <div class="skill-list-item">
             <img src="./images/icons/baseline-settings_ethernet-24px.svg" class="skill-icon" alt="Icon for machine learning.">
             <h3>Machine learning</h3>
                 <p>I am comfortable with using popular machine learning techniqes to analyze a dataset. I can build
@@ -116,7 +129,9 @@
                 automate processes, and more.</p>
 
             <div class="white-space"></div>
+            </div>
 
+            <div class="skill-list-item">
             <img src="./images/icons/baseline-bug_report-24px.svg" class="skill-icon" alt="Icon for web crawling.">
             <h3>Web crawling</h3>
                 <p>I am not afraid to get my hands dirty and work hard to find data. I have used python packages such as
@@ -124,7 +139,9 @@
                 models.</p>
 
             <div class="white-space"></div>
+            </div>
 
+            <div class="skill-list-item">
             <img src="./images/icons/baseline-bar_chart-24px.svg" class="skill-icon" alt="Icon for data visualization.">
             <h3>Data visualization</h3>
                 <p>With my background in academia, I am no stranger to creating beautiful plots to succinctly and
@@ -132,19 +149,26 @@
                 Plotly, and other programs to create these figures.</p>
 
             <div class="white-space"></div>
+            </div>
 
+            <div class="skill-list-item">
             <img src="./images/icons/baseline-assignment-24px.svg" class="skill-icon" alt="Icon for report writing.">
             <h3>Report writing</h3>
                 <p>I enjoy writing, and am not afraid of it. I have prepared numerous professional reports in my time,
                 including but not limited to scientific publications.</p>
 
             <div class="white-space"></div>
+            </div>
+            </div>
       </section>
     </main>
 
     <footer>
-        <i class="fa fa-linkedin-square" aria-label="LinkedIn Logo"></i>
-        <i class="fa fa-github-square" aria-label="Github Logo"></i>
+        <div class="footer-icons">
+          <p>Want to learn more?<br>Let's connect on LinkedIn!</p>
+          <i class="fa fa-linkedin-square" aria-label="LinkedIn Logo"></i>
+          <i class="fa fa-github-square" aria-label="Github Logo"></i>
+        </div>
     </footer>
   </body>
 </html>
