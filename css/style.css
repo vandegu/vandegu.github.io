@@ -124,6 +124,21 @@ header nav {
   font-size: 1.2rem;
 }
 
+@media screen and (min-width: 1200px) {
+  header nav {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 80vw;
+  }
+  header nav ul {
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
 
 
 /* Footer stuff */
