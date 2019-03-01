@@ -464,9 +464,9 @@ footer#index-footer {
   min-height: 300px;
 }
 
-footer#index-footer nav{
+footer nav{
   background: #000000;
-  font-size: 3vh;
+  font-size: 17px;
   text-align: center;
   margin: auto;
 }
@@ -482,9 +482,14 @@ main.index-main h3 {
   }
 
   footer#index-footer nav ul {
-    padding: 100px 0px;
+    padding: 180px 0px;
     display: flex;
     justify-content: space-evenly;
+  }
+
+  footer#index-footer nav ul li {
+    padding: 10px;
+    border: 1px solid white;
   }
 }
 
@@ -492,5 +497,8 @@ main.index-main h3 {
   main.index-main {
     grid-template-rows: 60vh 5vh 10vh;
     grid-template-columns: auto auto;
+  }
+  footer#index-footer nav ul {
+    padding: 120px 0px;
   }
 }
