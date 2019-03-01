@@ -464,7 +464,7 @@ main.index-main {
 
 footer#index-footer {
   background: #000000;
-  min-height: 100px;
+  min-height: 300px;
 }
 
 footer#index-footer nav{
@@ -475,6 +475,10 @@ footer#index-footer nav{
 }
 
 @media screen and (min-width: 800px) {
+  footer#index-footer {
+    min-height: 100px;
+  }
+
   footer#index-footer nav ul {
     padding: 100px 0px;
     display: flex;
