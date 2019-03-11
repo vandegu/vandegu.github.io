@@ -30,18 +30,18 @@ h1 {
   text-align: center;
   background: #ffffff;
   padding: 50px;
-  font-size: 100px;
+  font-size: 60px;
 }
 
 h2 {
   font-family: 'Padauk', sans-serif;
   /* font-family: 'VT323', monospace; */
-  font-size: 110px;
+  font-size: 40px;
   color: #00aef0;
 }
 
 h3 {
-  font-size: 65px;
+  font-size: 30px;
   color: #00aef0;
   font-family: 'Padauk', sans-serif;
 }
