@@ -24,6 +24,10 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+
     <title>Andrew Vande Guchte</title>
   </head>
   <body>
@@ -32,13 +36,26 @@
       <a href="#content" class='skip'>Skip to content.</a>
       <div class="index-header">
 
-        <div class="logo-index">
-          <img src="./images/AVG_logo.png" alt="Andrew's logo; a 6-sided die shape with A on one side, V on another (these are his initials)">
-        </div>
+        <div id="logos">
 
-        <div class="title">
-          <h1>Andrew Vande Guchte</h1>
-          <h2>Data Analyst</h2>
+          <div class="logo-index">
+            <img src="./images/AVG_logo.png" alt="Andrew's logo; a 6-sided die shape with A on one side, V on another (these are his initials)">
+          </div>
+
+          <div class="title">
+            <h1>Andrew Vande Guchte</h1>
+            <h2>Data Analyst</h2>
+          </div>
+
+        </div>
+        <div id='menu'>
+          <button id="menu-drop-button">Learn more</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="about.html">About Me</a>
+            <a href="experience.html">My Experience</a>
+            <a href="projects.html">My Projects</a>
+            <a href="creative.html">Creative Pursuits</a>
+          </div>
         </div>
       </div>
 

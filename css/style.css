@@ -432,6 +432,13 @@ div.index-header {
   display: flex;
   align-items: center;
   height: 100px;
+  justify-content: space-between;
+  width: 95vw;
+}
+
+#logos {
+  display: flex;
+  align-items: center;
 }
 
 header .index-header .logo-index img {
@@ -518,4 +525,40 @@ main.index-main h3 {
   footer#index-footer nav ul {
     padding: 120px 0px;
   }
+}
+
+/* Drop-down menu */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 20px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Padauk', sans-serif;
+}
+
+.dropdown-content a:hover, .dropdown-content a:focus {
+  background-color: #00aef0;
+}
+
+.show {display: block;}
+
+#menu-drop-button {
+  background-color: #00aef0;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;font-family: 'OCR A Std', monospace;
 }
