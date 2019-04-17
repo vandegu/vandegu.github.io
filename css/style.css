@@ -556,9 +556,13 @@ main.index-main h3 {
 
 #menu-drop-button {
   background-color: #00aef0;
-  color: white;
+  color: black;
   padding: 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;font-family: 'OCR A Std', monospace;
+}
+
+#menu-drop-button:hover, #menu-drop-button:focus {
+  background-color: #ffffff;
 }
