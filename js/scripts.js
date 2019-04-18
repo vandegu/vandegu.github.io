@@ -37,19 +37,31 @@ $( window ).scroll(function() {
 
 // Fly-in objects on experience
 
-var skills_from_top = $('#skill-list').offset().top - 400;
+// var skills_from_top = $('#skill-list').offset().top - 400;
+//
+// $( window ).scroll(function() {
+//   var scroll_from_top2 = $(window).scrollTop();
+//   console.log(skills_from_top,scroll_from_top2);
+//   if ( scroll_from_top2 > skills_from_top) {
+//     $("#skill-list div.skill-list-item").animate({
+//     left: '0px',
+//     opacity: '1.0',
+//   });
+//   }
+// });
 
 $( window ).scroll(function() {
-  var scroll_from_top2 = $(window).scrollTop();
-  console.log(skills_from_top,scroll_from_top2);
-  if ( scroll_from_top2 > skills_from_top) {
-    $("#skill-list div.skill-list-item").animate({
-    left: '0px',
-    opacity: '1.0',
+  let scroll_from_top2 = $(window).scrollTop();
+  $("#skill-list div.skill-list-item").each(function (index) {
+    let skills_from_top = $(this).offset().top - 600;
+    if ( scroll_from_top2 > skills_from_top) {
+      $(this).animate({
+        left: '0px',
+        opacity: '1.0',
+      },600);
+    };
   });
-  }
 });
-
 
 
 
