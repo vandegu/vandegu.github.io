@@ -650,7 +650,7 @@ main.index-main h3 {
   align-items: center;
 }
 
-/* typewriter */
+/* Typewriter for index */
 
 #myName {
   display: inline;
@@ -664,4 +664,32 @@ main.index-main h3 {
 
 .invisCursor {
   display: none !important;
+}
+
+/* Hamburger menu for mobile view */
+
+div.mobile-nav nav {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  div.full-nav nav {
+    display: none;
+  }
+
+  div.mobile-nav nav {
+    display: block;
+  }
+
+  div.mobile-nav nav #menu-icon {
+    height: 60px;
+    width: 60px;
+  }
+
+  div.mobile-nav nav #menu-drop-button {
+    padding: 10px;
+    height: 80px;
+    width: 80px;
+
+  }
 }
