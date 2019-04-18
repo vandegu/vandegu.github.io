@@ -573,8 +573,17 @@ main.index-main h3 {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 100;
 }
 
 .h1-wrapper {
   height: 80px;
+}
+
+/* Fly-in  */
+
+#skill-list div.skill-list-item {
+  opacity: 0.0;
+  position: relative;
+  left: 200px;
 }
