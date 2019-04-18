@@ -28,27 +28,8 @@ $( window ).scroll(function() {
   }
 });
 
-// Soundcloud
-
-// SC.initialize({
-//     client_id: 'YOUR_CLIENT_ID',
-//     redirect_uri: 'http://example.com/callback'
-//   });
 
 // Fly-in objects on experience
-
-// var skills_from_top = $('#skill-list').offset().top - 400;
-//
-// $( window ).scroll(function() {
-//   var scroll_from_top2 = $(window).scrollTop();
-//   console.log(skills_from_top,scroll_from_top2);
-//   if ( scroll_from_top2 > skills_from_top) {
-//     $("#skill-list div.skill-list-item").animate({
-//     left: '0px',
-//     opacity: '1.0',
-//   });
-//   }
-// });
 
 $( window ).scroll(function() {
   let scroll_from_top2 = $(window).scrollTop();
@@ -62,6 +43,35 @@ $( window ).scroll(function() {
     };
   });
 });
+
+
+// typeWriter
+
+function oneSecondFunction() {
+  $('#cursor').toggleClass("invisCursor")
+}
+
+$( document ).ready(function() {
+  let text = 'Andrew Vande Guchte'
+  let i = 0
+  let speed = 80
+
+  function typeWriter() {
+    if (i < text.length) {
+      document.getElementById("myName").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    };
+  };
+  typeWriter()
+
+  $(function(){
+  setInterval(oneSecondFunction, 700);
+  });
+});
+
+
+
 
 
 

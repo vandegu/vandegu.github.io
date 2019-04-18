@@ -649,3 +649,19 @@ main.index-main h3 {
   justify-content: center;
   align-items: center;
 }
+
+/* typewriter */
+
+#myName {
+  display: inline;
+}
+
+#cursor {
+  display: inline;
+  color: white;
+}
+
+
+.invisCursor {
+  display: none !important;
+}
