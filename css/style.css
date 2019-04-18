@@ -566,3 +566,15 @@ main.index-main h3 {
 #menu-drop-button:hover, #menu-drop-button:focus {
   background-color: #ffffff;
 }
+
+/* Sticky h1 */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.h1-wrapper {
+  height: 80px;
+}
