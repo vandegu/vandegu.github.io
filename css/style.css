@@ -273,6 +273,7 @@ p#bi-p {
 
 .skill-list-item p {
   font-size: 20px;
+  color: black;
 }
 
 /* Other way (besides grid) to center an img...make it block! */
